@@ -162,6 +162,10 @@ void ball_sort_puzzle() {
             continue;
         } 
         
+        if (x == y) {
+            printf("MUST BE SAME!\n");
+            continue;
+        }
 
         down_possible(rows, cols, field, x, y);
 
